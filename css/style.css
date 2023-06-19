@@ -1,0 +1,386 @@
+:root{
+    --primaryColor: #907e7e;
+    --secondColor:#f7bcf7;
+    --lightFarbe:#ffffff;
+    --bgFarbe-1:#3a3b3c;
+    --bgFarbe-2: #22282a;
+    --padding: 8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 16px;
+    font-family:'Josefin Sans', sans-serif;
+    color: var(--lightFarbe);
+
+}
+
+h1{
+    font-size: 3.65rem;
+    margin: 1.7rem 0;
+}
+
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--zweiteFarbe);
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--secondColor);
+    margin-bottom: 1.4rem;
+    padding: var(--padding);
+
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--lightFarbe);
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+h5{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.texts a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: var(--secondColor);
+    text-decoration:underline;
+}
+p{
+    color: var(--primaryColor);
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url(/image/technology.jpg);
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background-color:var(--bgFarbe-1);
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*position: fixed;
+    z-index: 999;*/
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--lightFarbe);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4ms;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--lightFarbe);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s ;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--lightFarbe);
+}
+.content{
+    flex-grow: 1;
+    
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container-texts{
+    position: relative;
+    bottom: 70px;
+    
+}
+
+.social{
+    margin-top: 3.5rem;
+}
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+
+.home .container-fotos{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: self-end;
+}
+.home .container-fotos img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.home .container-fotos:hover .shape{
+    bottom: 40px;
+
+}
+.home .container-fotos:hover .mafoto{
+    left: 45%;
+}
+.container-fotos{
+    width: 100%;
+    height: 15rem;
+}
+.container-fotos img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.container p {
+    margin-bottom: 1rem;
+    line-height: 1.3rem;
+}
+
+.container ul {
+   line-height: 1.3rem; 
+}
+
+.ueber{
+    background-color: var(--bgFarbe-2);
+    padding: 0 var(--padding);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 2rem;
+
+}
+
+.ueber .container-texts{
+    width: 25%;
+}
+
+/* SOCIAL-ICONS UND POP-UP FENSTER */
+
+.social-icons {
+    display: flex;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.social-icons svg{
+    transition: 0.2s ease;
+}
+
+.social-icons svg:hover {
+    color: #4287e0;
+}
+
+.tooltip .popuptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #14141467;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .popuptext {
+    visibility: visible;
+  }
+
+.tooltip .popuptext p {
+    color: #fff;
+}
+
+.tooltip .popuptext a {
+    color: #09a8f1;
+}
+
+.tooltip .popuptext a:hover {
+    color: red;
+}
+
+/* SOCIAL-ICONS UND POPUP ENDE */
+
+.erfahrung{
+    background-color: var(--bgFarbe-1);
+    padding: 2rem var(--padding);
+
+}
+.text-center{
+    text-align: center;
+}
+.cards{
+    width: 100vw;
+    height: auto;
+    min-height: 70vh;
+    padding: 2rem;
+    background-color: var(--bgFarbe-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    
+}
+.titel{
+    display: flex;
+    justify-content: center;
+    color: var(--primaryColor);
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+/*.inhalt{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 21.25em;
+    height: auto;
+    background-color: var(--lightFarbe);
+    box-shadow: 0 5px 25px rgba(1 1 1  /15%);
+    padding: 1.5rem;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}*/
+/*.card:hover{
+    transform: scale(1.5);
+}*/
+.card{
+    width: 20%;
+    height: 500px;
+    border-radius: 20px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primaryColor);
+}
+.card img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 2rem;
+    transition: 0.2s ease;
+}
+
+.card img:hover {
+    transform: scale(102%);
+
+}
+
+.card p {
+    color: #000;
+    width: 80%;
+    font-weight: 700;
+    text-align: center;
+}
+[data-tooltip] {
+    position: relative;
+    text-decoration: underline; 
+    cursor: default; 
+  }
+
+  [data-tooltip]::after {
+    position: absolute;
+    width: 140px;
+    left: calc(50% - 70px);
+    bottom: 125%;
+    box-sizing: border-box ;
+    text-align: center;
+    content: attr(data-tooltip);
+    color: #ffffff;
+    background: #3a3b3c;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(10px);
+    transition: oacity 0.3s, transform 0.2s;
+  }
+
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+   
+  }
+   
+
+@media (max-width: 650px){
+    .home .ueber{
+        display: block;
+        width: 100%;
+    }
+    .card{
+        width: 85vw;
+    }
+
+}
+
+/* SKILLS-SECTION */
+.skills {
+    width: 100vw;
+    height: auto;
+    min-height: 70vh;
+    padding: 2rem;
+    background-color: var(--bgFarbe-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
