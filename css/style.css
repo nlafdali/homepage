@@ -50,7 +50,7 @@ h3 {
 h4 {
     font-size: 1.25rem;
     letter-spacing: 0.12rem;
-    color: var(--zweiteFarbe);
+    color: var(--secondColor);
 }
 
 h5 {
@@ -69,6 +69,7 @@ p {
     letter-spacing: 1px;
     line-height: 1.6rem;
     font-size: 1rem;
+    text-align: justify;
 }
 
 /* NAVBAR */
@@ -326,6 +327,29 @@ nav ul li a:hover {
 }
 
 /* PROJEKTE SECTION */
+.ab-projekt{
+    width: 100vw;
+    padding: 1.5rem 0;
+    background-color: var(--bgFarbe-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ab-projekt ul {
+    margin-top: 1.5rem;
+}
+.ab-projekt ul li {
+    list-style-type: square;
+    line-height: 1.6rem;
+}
+.ab-projekt img {
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* Entfernt möglichen Rand um das Bild */
+    padding: 180px; /* Fügt inneren Abstand für das Bild hinzu */
+    border-radius: 10px; /
+}
 .projekte {
     width: 100vw;
     padding: 1.5rem 0;
