@@ -50,10 +50,6 @@
                         <a href="https://github.com/nlafdali" target="_blank"><img src="icons/github.png" title="Hier Klicken" alt=""/></a>
                     </div>
                 </div>
-                <!-- <div class="container-fotos">
-                    <img src="images/octagon-shape-regular-polygon-geometry-clip-art-shape-98f11822b67462675cdafe655b478db1.png" alt="" class="shape"/>
-                    <img src="images/programmer-computer-programming-clip-art-others-784cb6bc17bdbe56820ed77f7764cec0.png" alt="" class="mafoto"/>
-                </div> -->
             </div>
         </section>
         <!-- ABOUT SECTION -->
@@ -154,8 +150,28 @@
                 </div>
             </div>
         </section>
+            <section class="microservices">
+                <h2>Ablauf einer Bestellung innerhalb einer Microservices-Architektur</h2>
+                <div class="two-column">
+                    <div class="col-left">
+                        <img src="images/sequenzdiagr-Ablauf_einer_Bestellung_über_Feign.png" title="" alt=""/>
+                    </div>
+                    <div class="col-right">
+
+                        <p>Das folgende Sequenzdiagramm zeigt, wie der Bestellservice mithilfe von Feign Clients
+                            mit dem Benutzer- und Produktservice kommuniziert. Der Bestellservice empfängt eine Anfrage vom Benutzer,
+                            ruft über Feign Clients die benötigten Daten aus dem Benutzerservice und dem Produktservice ab
+                            und speichert anschließend die Bestellung in seiner eigenen Datenbank. </p>
+                        <ul>
+                            <li><strong>Unabhängigkeit:</strong> Jeder Service verwaltet eigene Daten und Logik.</li>
+                            <li><strong>Kommunikation:</strong> Über HTTP/REST mittels <code>OpenFeign</code>.</li>
+                            <li><strong>Skalierbarkeit:</strong> Dienste können unabhängig entwickelt und bereitgestellt werden.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         <section class="projekte">
-            <h2>Projekte</h2>
+            <h2>Projekte während der Umschulung</h2>
 
 
             <div class="card-container">
