@@ -154,14 +154,14 @@
                 <h2>Ablauf einer Bestellung innerhalb einer Microservices-Architektur</h2>
                 <div class="two-column">
                     <div class="col-left">
-                        <img src="images/sequenzdiagr-Ablauf_einer_Bestellung_über_Feign.png" title="" alt=""/>
+                        <img src="images/sequenzdiagr-Ablauf_einer_Bestellung_über_Feign.png" title="Diagramm zu Microservices Architektur" alt=""/>
                     </div>
                     <div class="col-right">
 
                         <p>Das folgende Sequenzdiagramm zeigt, wie der Bestellservice mithilfe von Feign Clients
-                            mit dem Benutzer- und Produktservice kommuniziert. Der Bestellservice empfängt eine Anfrage vom Benutzer,
-                            ruft über Feign Clients die benötigten Daten aus dem Benutzerservice und dem Produktservice ab
-                            und speichert anschließend die Bestellung in seiner eigenen Datenbank. </p>
+                            mit dem Benutzer- und Produktservice kommuniziert. Der Bestellservice empfängt
+                            eine Anfrage vom Benutzer, ruft über Feign Clients die benötigten Daten aus dem Benutzerservice
+                            und dem Produktservice ab und speichert anschließend die Bestellung in seiner eigenen Datenbank. </p>
                         <ul>
                             <li><strong>Unabhängigkeit:</strong> Jeder Service verwaltet eigene Daten und Logik.</li>
                             <li><strong>Kommunikation:</strong> Über HTTP/REST mittels <code>OpenFeign</code>.</li>
