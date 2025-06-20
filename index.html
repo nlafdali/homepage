@@ -61,11 +61,7 @@
                 </a>
             </div>
             <div class="col-right">
-                <a href="aboutMe.html" title="hier klicken">
-                    <a href="aboutMe.html" id="about">über
-                        <span>mich</span>
-                    </a>
-                </a>
+                <a href="aboutMe.html" id="about" title="hier klicken">über <span>mich</span></a>
                 <h5>Fachinformatikerin für Anwendungsentwicklung</h5>
                 <p>
                     Während meiner Umschulung habe ich Kenntnisse in den
@@ -79,13 +75,13 @@
                 </p>
                 <ul>
                     <li>Sozialbetreuerin</li>
-                    <li>Ausbildunng in Marokko als Informatikkauffrau</li>
+                    <li>Ausbildung in Marokko als Informatikkauffrau</li>
                     <li>
-                        Freiwiligendienst aller Generation bei innatura e.v.
+                        Freiwilligendienst aller Generationen bei innatura e.v.
                     </li>
                     <li>
                     <a href="http://old.innatura.org/innatura-freiwillige-geehrt/" target="_blank">
-                        <span>Ehrung</span> durch die Oberbürgemeisterin der Stadt Köln</a>
+                        <span>Ehrung</span> durch die Oberbürgermeisterin der Stadt Köln</a>
                     </li>
                     <li>
                         Direktionsassistentin bei der Firma Actuel System, die für die
@@ -130,45 +126,54 @@
         </section>
 
         <!-- PROJEKTE SECTION -->
-        <section class="ab-projekt">
-            <h1>Projekte</h1>
-            <div class="two-column">
-                <div class="col-left">
-                    <img src="images/soll-integration.png" title="Soll-Konzept des Projekts" alt=""/>
-                </div>
-                <div class="col-right">
+            <section class="ab-projekt">
+                <div class="card-wrapper">
+                    <h1>Projekte</h1>
+                    <div class="two-column">
+                        <div class="col-left">
+                            <img src="images/soll-integration.png" title="Soll-Konzept des Projekts" alt=""/>
+                        </div>
+                        <div class="col-right">
 
-                    <h3>Abschlussprojet: Integrationstests</h3>
-                    <p>
-                    <ul>
-                        <li>Einführung eines neuen Maven-Moduls: <br> Das Projekt beinhaltete die Strukturierung und Konfiguration eines neuen Maven-Moduls, um die Integrationslogik von mehreren Komponenten zu vereinfachen.</li>
-                        <li>Konfiguration der Oracle-Verbindung: <br> Einrichtung der Verbindung zu einer Oracle-Datenbank zur Verwaltung von Testdaten.</li>
-                        <li>Nutzung von Liquibase: <br> Implementierung von Liquibase zur Datenbankversionierung und Schema-Änderungen während der Integrationstests.</li>
-                        <li>Erstellung diverser Testfälle: <br> Entwicklung von automatisierten Testfällen, um die Integrität der Daten und Prozesse zu gewährleisten.</li>
-                        <li>Prüfung von PL/SQL-Skripten: <br>Validierung und Ausführung von PL/SQL-Skripten zur Datenbankinteraktion.</li>
-                    </ul>
-                    </p>
+                            <h3>Abschlussprojet: Integrationstests</h3>
+                            <p>
+                            <ul>
+                                <li>Einführung eines neuen Maven-Moduls: <br> Das Projekt beinhaltete die Strukturierung und Konfiguration eines neuen Maven-Moduls, um die Integrationslogik von mehreren Komponenten zu vereinfachen.</li>
+                                <li>Konfiguration der Oracle-Verbindung: <br> Einrichtung der Verbindung zu einer Oracle-Datenbank zur Verwaltung von Testdaten.</li>
+                                <li>Nutzung von Liquibase: <br> Implementierung von Liquibase zur Datenbankversionierung und Schema-Änderungen während der Integrationstests.</li>
+                                <li>Erstellung diverser Testfälle: <br> Entwicklung von automatisierten Testfällen, um die Integrität der Daten und Prozesse zu gewährleisten.</li>
+                                <li>Prüfung von PL/SQL-Skripten: <br>Validierung und Ausführung von PL/SQL-Skripten zur Datenbankinteraktion.</li>
+                            </ul>
+                            </p>
 
-                </div>
-            </div>
-        </section>
-            <section class="microservices">
-                <h2>Ablauf einer Bestellung innerhalb einer Microservices-Architektur</h2>
-                <div class="two-column">
-                    <div class="col-left">
-                        <img src="images/sequenzdiagr-Ablauf_einer_Bestellung_über_Feign.png" title="Diagramm zu Microservices Architektur" alt=""/>
+                        </div>
                     </div>
-                    <div class="col-right">
+                </div>
 
-                        <p>Das folgende Sequenzdiagramm zeigt, wie der Bestellservice mithilfe von Feign Clients
-                            mit dem Benutzer- und Produktservice kommuniziert. Der Bestellservice empfängt
-                            eine Anfrage vom Benutzer, ruft über Feign Clients die benötigten Daten aus dem Benutzerservice
-                            und dem Produktservice ab und speichert anschließend die Bestellung in seiner eigenen Datenbank. </p>
-                        <ul>
-                            <li><strong>Unabhängigkeit:</strong> Jeder Service verwaltet eigene Daten und Logik.</li>
-                            <li><strong>Kommunikation:</strong> Über HTTP/REST mittels <code>OpenFeign</code>.</li>
-                            <li><strong>Skalierbarkeit:</strong> Dienste können unabhängig entwickelt und bereitgestellt werden.</li>
-                        </ul>
+            <section class="microservices">
+                <div class="card-wrapper">
+                    <h2>Ablauf einer Bestellung innerhalb einer Microservices-Architektur</h2>
+                    <div class="two-column">
+                        <div class="col-left">
+                            <img
+                                    src="images/sequenzdiagr-Ablauf_einer_Bestellung_über_Feign.png"
+                                    title="Diagramm zu Microservices Architektur"
+                                    alt="Diagramm zu Microservices Architektur"
+                            />
+                        </div>
+                        <div class="col-right">
+                            <p>
+                                Das folgende Sequenzdiagramm zeigt, wie der Bestellservice mithilfe von Feign Clients
+                                mit dem Benutzer- und Produktservice kommuniziert. Der Bestellservice empfängt
+                                eine Anfrage vom Benutzer, ruft über Feign Clients die benötigten Daten aus dem Benutzerservice
+                                und dem Produktservice ab und speichert anschließend die Bestellung in seiner eigenen Datenbank.
+                            </p>
+                            <ul>
+                                <li><strong>Unabhängigkeit:</strong> Jeder Service verwaltet eigene Daten und Logik.</li>
+                                <li><strong>Kommunikation:</strong> Über HTTP/REST mittels <code>OpenFeign</code>.</li>
+                                <li><strong>Skalierbarkeit:</strong> Dienste können unabhängig entwickelt und bereitgestellt werden.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -182,7 +187,7 @@
                         <img src="./images/KontoBerabeiten.png" alt=""/>
                     </div>
                     <div class="card-bottom">
-                        <h3><span data-toolip="ist mit java und mySql">Kunden Tabelle</span></h3>
+                        <h3><span data-tooltip="ist mit java und mySql">Kunden Tabelle</span></h3>
                         <p>
                             Daten der Kunden, einfügen, bearbeiten, aktualisieren und löschen.
                             verbunden mit Kunden Tabelle in datenbank (MySql)
@@ -252,7 +257,7 @@
                    </div>
                </div>
            </div>
-       </section>
+        </section>
        <!-- SKILLS SECTION -->
         <section class="skills">
             <h2>IT Anwendungen</h2>

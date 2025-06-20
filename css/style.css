@@ -8,21 +8,17 @@
     --padding: 8%;
     --spacing-md: 16px;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 html {
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--lightFarbe);
-
 }
-
 h1 {
     font-size: 4rem;
     font-weight: 500;
@@ -36,7 +32,6 @@ h2 {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
-
 h3 {
     font-family: sans-serif;
     font-weight: 700;
@@ -44,25 +39,20 @@ h3 {
     color: var(--secondColor);
     padding: var(--padding);
 }
-
-
 h4 {
     font-size: 1.25rem;
     letter-spacing: 0.12rem;
     color: var(--secondColor);
 }
-
 h5 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
 }
-
 .texts a {
     text-decoration: none;
     color: #fff;
 }
-
 p {
     color: var(--secondColor);
     letter-spacing: 1px;
@@ -70,7 +60,6 @@ p {
     font-size: 1rem;
     text-align: justify;
 }
-
 /* NAVBAR */
 nav {
     background-color: var(--bgFarbe-3);
@@ -80,18 +69,15 @@ nav {
     align-items: center;
     border-bottom: 1px solid #ffffff3b;
 }
-
 nav img {
     width: 6rem;
     height: auto;
 }
-
 nav ul li {
     list-style-type: none;
     display: inline-block;
     margin: 0.8rem 1.5rem;
 }
-
 nav ul li a {
     color: var(--lightFarbe);
     text-decoration: none;
@@ -99,12 +85,10 @@ nav ul li a {
     transition: 0.3s;
     font-family: 'Poppins', sans-serif;
 }
-
 nav ul li a:hover {
     color: var(--primaryColor);
     border-bottom: 1px solid var(--primaryColor);
 }
-
 /* HOME SECTION */
 .home {
     width: 100vw;
@@ -114,7 +98,6 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
 }
-
 .btn {
     background-color: #61707c;
     color: var(--lightFarbe);
@@ -125,37 +108,30 @@ nav ul li a:hover {
     border: 2px solid;
     transition: 0.4s;
 }
-
 .btn:hover {
     background-color: transparent;
     border: 2px solid var(--lightFarbe);
 }
-
 .content {
     flex-grow: 1;
     padding: 0 var(--padding);
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
-
 .social {
     margin-top: 3.5rem;
     display: flex;
     align-items: center;
 }
-
 .social img {
     margin-right: 2rem;
     width: 2.5rem;
     transition: 0.4s;
 }
-
 .social img:hover {
-    transform: scale(1.2);
+     transform: scale(1.2);
 }
-
 /* COLUMNS */
 .two-column {
     width: 100%;
@@ -164,7 +140,6 @@ nav ul li a:hover {
     align-items: flex-start;
     box-sizing: border-box;
 }
-
 .two-column > .col-left {
     width: 50%;
     box-sizing: border-box;
@@ -174,7 +149,6 @@ nav ul li a:hover {
     align-items: start;
     justify-content: center;
 }
-
 .two-column > .col-right {
     width: 50%;
     box-sizing: border-box;
@@ -184,16 +158,13 @@ nav ul li a:hover {
     align-items: start;
     justify-content: center;
 }
-
 .container p {
     margin-bottom: 1rem;
     line-height: 1.3rem;
 }
-
 .container ul {
     line-height: 1.3rem;
 }
-
 /* ABOUT SECTION */
 .ueber {
     background-color: var(--bgFarbe-2);
@@ -203,30 +174,25 @@ nav ul li a:hover {
     align-items: center;
     gap: 2rem;
 }
-
 .ueber img {
     width: 80%;
     height: auto;
 }
-
 #about {
     font-size: 4rem;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
 }
-
 #about span {
     color: var(--secondColor);
     transition: 0.5s;
     text-decoration: underline;
 }
-
 #about span:hover {
     color: #fff;
     text-decoration: none;
 }
-
 .ueber ul {
     margin-top: 1.5rem;
 }
@@ -234,34 +200,27 @@ nav ul li a:hover {
     list-style-type: square;
     line-height: 1.6rem;
 }
-
 .ueber ul li a {
     color: #f7bcf7;
     transition: 0.5s;
 }
-
 .ueber ul li a:hover {
     color: #fff;
     text-decoration: none;
 }
-
 /* SOCIAL-ICONS UND POP-UP FENSTER */
-
 .social-icons {
     display: flex;
     margin-top: 2rem;
     cursor: pointer;
 }
-
 .social-icons svg {
     transition: 0.2s ease;
     color: #fff;
 }
-
 .social-icons svg:hover {
     color: #4287e0;
 }
-
 .tooltip .popuptext {
     visibility: hidden;
     width: auto;
@@ -273,32 +232,36 @@ nav ul li a:hover {
     position: absolute;
     z-index: 1;
 }
-
 .tooltip:hover .popuptext {
     visibility: visible;
 }
-
 .tooltip .popuptext p {
     color: #fff;
 }
-
 .tooltip .popuptext a {
     color: #09a8f1;
 }
-
 .tooltip .popuptext a:hover {
     color: red;
 }
-
 /* PROJEKTE SECTION */
 .ab-projekt{
     width: 100vw;
     padding: 1.5rem 0;
-    background-color: var(--bgFarbe-3);
+    background-color: var(--bgFarbe-2);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.ab-projekt .card-wrapper {
+    background-color: var(--bgFarbe-3);
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .ab-projekt ul {
     margin-top: 1.5rem;
@@ -308,42 +271,69 @@ nav ul li a:hover {
     line-height: 1.6rem;
 }
 .ab-projekt img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 0;
-    padding: 180px;
+    max-width: 100%;
     border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
 }
-.microservices{
+
+.ab-projekt .col-left {
+    width: 35%;
+}
+.ab-projekt .col-right {
+    width: 40%;
+}
+.microservices {
     width: 100vw;
-    padding: 1.5rem 0;
+    padding: 2rem;
     background-color: var(--bgFarbe-2);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+.microservices .card-wrapper {
+    background-color: var(--bgFarbe-3);
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.microservices h2 {
+    text-align: left;
+    width: 100%;
+    padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
+    color: var(--lightFarbe); /* weiß */
+}
 .microservices ul {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    color: #ccc;
+    padding-left: 1.5rem;
 }
 .microservices ul li {
     list-style-type: square;
     line-height: 1.6rem;
+    margin-bottom: 0.5rem;
 }
 .microservices img {
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 16px ;
-    border-radius: 10px;
-}
-.microservices h2{
-    text-align: left;
     width: 100%;
-    padding: 0 32px;
-    margin-bottom: 1rem;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
 }
-
+.microservices .col-left {
+    width: 60%;
+}
+.microservices .col-right {
+    width: 40%;
+}
 .projekte {
     width: 100vw;
     padding: 1.5rem 0;
@@ -353,7 +343,6 @@ nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
 }
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -362,7 +351,6 @@ nav ul li a:hover {
     justify-content: center;
     margin: 1.5rem 0;
 }
-
 .card {
     width: 400px;
     height: 550px;
@@ -371,39 +359,32 @@ nav ul li a:hover {
     box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
-
 .card-top img {
     width: 100%;
 }
-
 .card-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 1.3rem 1.3rem 1.3rem;
 }
-
 .card-bottom svg {
     color: #2e2e2e;
     transition: all 0.3s ease;
 }
-
 .card-bottom svg:hover {
     color: #4287e0;
     transform: rotate(10deg);
 }
-
 .card-bottom h3 {
     color: #2e2e2e;
     font-family: 'Poppins', sans-serif;
 }
-
 .card-bottom p {
     width: 100%;
     color: #2e2e2e;
     font-family: sans-serif;
 }
-
 /* SKILLS-SECTION */
 .skills {
     width: 100vw;
@@ -414,12 +395,23 @@ nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
 }
-
 .skills h2 {
     margin-bottom: 2rem;
 }
-
 .tech-stack {
     display: flex;
     gap: 2rem;
+}
+@media screen and (max-width: 900px) {
+    .microservices .two-column {
+        flex-direction: column;
+    }
+    .microservices .col-left,
+    .microservices .col-right {
+        width: 100%;
+    }
+
+    .microservices img {
+        max-height: unset;
+    }
 }
