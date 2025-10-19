@@ -1,0 +1,42 @@
+@startuml
+title **FormSys - Architekturübersicht**
+
+skinparam rectangle {
+    BackgroundColor White
+    BorderColor Black
+    RoundCorner 15
+    Shadowing false
+}
+skinparam note {
+    BackgroundColor #fff9c4
+    BorderColor Black
+}
+
+rectangle "Frontend" as FE {
+    rectangle "Postman / HTML Client" as Client
+}
+
+rectangle "Backend (Spring Boot)" as BE {
+    rectangle "FormController" as Controller
+    rectangle "FormService" as Service
+    rectangle "FormRepository\n(JPA)" as Repo
+}
+
+FE -down-> BE : REST API (JSON)
+
+Controller -down-> Service : Geschäftslogik
+Service -down-> Repo : DB-Zugriff (JPA)
+
+note right of Controller
+  - REST-Endpunkte:
+    * GET /api/forms
+    * POST /api/forms
+    * PUT /api/forms/{id}
+    * DELETE /api/forms/{id}
+end note
+
+note right of Repo
+  Datenbank (H2 / PostgreSQL)
+end note
+
+@enduml
