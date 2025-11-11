@@ -1,3 +1,5 @@
+
+/* ---- ROOT-VARIABLEN ---- */
 :root {
     --primaryColor: #907e7e;
     --secondColor: #f7bcf7;
@@ -8,51 +10,58 @@
     --padding: 8%;
     --spacing-md: 16px;
 }
+
+/* ---- GLOBAL ---- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 html {
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--lightFarbe);
 }
+
 h1 {
     font-size: 4rem;
     font-weight: 500;
     margin: 1.7rem 0;
     width: 80%;
 }
+
+h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--lightFarbe);
+}
+
 h2 {
     font-size: 2rem;
-    color: var(--lightFarbe);
     letter-spacing: 0.12rem;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
 }
+
 h3 {
-    font-family: sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--secondColor);
     padding: var(--padding);
 }
+
 h4 {
     font-size: 1.25rem;
     letter-spacing: 0.12rem;
     color: var(--secondColor);
 }
+
 h5 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
 }
-.texts a {
-    text-decoration: none;
-    color: #fff;
-}
+
 p {
     color: var(--secondColor);
     letter-spacing: 1px;
@@ -60,44 +69,8 @@ p {
     font-size: 1rem;
     text-align: justify;
 }
-/* NAVBAR */
-nav {
-    background-color: var(--bgFarbe-3);
-    padding: 1rem 10rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ffffff3b;
-}
-nav img {
-    width: 6rem;
-    height: auto;
-}
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0.8rem 1.5rem;
-}
-nav ul li a {
-    color: var(--lightFarbe);
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.3s;
-    font-family: 'Poppins', sans-serif;
-}
-nav ul li a:hover {
-    color: var(--primaryColor);
-    border-bottom: 1px solid var(--primaryColor);
-}
-/* HOME SECTION */
-.home {
-    width: 100vw;
-    height: 100vh;
-    background: url(../images/tech4.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
+
+/* ---- BUTTONS --- */
 .btn {
     background-color: #61707c;
     color: var(--lightFarbe);
@@ -108,10 +81,54 @@ nav ul li a:hover {
     border: 2px solid;
     transition: 0.4s;
 }
+
 .btn:hover {
     background-color: transparent;
     border: 2px solid var(--lightFarbe);
 }
+
+/* ---- NAVIGATION ---- */
+nav {
+    background-color: var(--bgFarbe-3);
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff3b;
+}
+
+nav img {
+    width: 6rem;
+    height: auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lightFarbe);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+}
+
+/* ---- HOME SECTION ---- */
+.home {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/tech4.jpg) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
     flex-grow: 1;
     padding: 0 var(--padding);
@@ -119,222 +136,150 @@ nav ul li a:hover {
     align-items: center;
     justify-content: space-between;
 }
+
 .social {
     margin-top: 3.5rem;
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
+
 .social img {
-    margin-right: 2rem;
     width: 2.5rem;
     transition: 0.4s;
 }
+
 .social img:hover {
-     transform: scale(1.2);
+    transform: scale(1.2);
 }
-/* COLUMNS */
+
+/* ---- FLEX-GRID ---- */
 .two-column {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    box-sizing: border-box;
+    width: 100%;
+    gap: var(--spacing-md);
 }
-.two-column > .col-left {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0 var(--spacing-md) 0 0;
+
+.two-column .col-left,
+.two-column .col-right {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: center;
 }
-.two-column > .col-right {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0 0 0 var(--spacing-md);
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-.container p {
-    margin-bottom: 1rem;
-    line-height: 1.3rem;
-}
-.container ul {
-    line-height: 1.3rem;
-}
-/* ABOUT SECTION */
+
+/* ---- ÜBER-MICH SECTION ---- */
 .ueber {
     background-color: var(--bgFarbe-2);
     padding: var(--padding);
-    width: 100vw;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+.ueber .two-column {
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
     gap: 2rem;
 }
-.ueber img {
-    width: 80%;
-    height: auto;
+
+/* Bild + Icons */
+.ueber .col-left {
+    width: 40%;
+    align-items: center;
 }
-#about {
-    font-size: 4rem;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
+
+.ueber .col-left img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+    object-fit: cover;
 }
-#about span {
-    color: var(--secondColor);
-    transition: 0.5s;
-    text-decoration: underline;
-}
-#about span:hover {
-    color: #fff;
-    text-decoration: none;
-}
-.ueber ul {
-    margin-top: 1.5rem;
-}
-.ueber ul li {
-    list-style-type: square;
-    line-height: 1.6rem;
-}
-.ueber ul li a {
-    color: #f7bcf7;
-    transition: 0.5s;
-}
-.ueber ul li a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-/* SOCIAL-ICONS UND POP-UP FENSTER */
-.social-icons {
+
+/* --- Social-Media --- */
+.ueber .social-icons {
     display: flex;
-    margin-top: 2rem;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.ueber .social-icons svg {
+    color: var(--lightFarbe);
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
-.social-icons svg {
-    transition: 0.2s ease;
-    color: #fff;
-}
-.social-icons svg:hover {
-    color: #4287e0;
-}
-.tooltip .popuptext {
-    visibility: hidden;
-    width: auto;
-    background-color: #14141467;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 1.5rem;
-    position: absolute;
-    z-index: 1;
-}
-.tooltip:hover .popuptext {
-    visibility: visible;
-}
-.tooltip .popuptext p {
-    color: #fff;
-}
-.tooltip .popuptext a {
-    color: #09a8f1;
-}
-.tooltip .popuptext a:hover {
-    color: red;
-}
-/* PROJEKTE SECTION */
-.ab-projekt{
-    width: 100vw;
-    padding: 1.5rem 0;
-    background-color: var(--bgFarbe-2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.ab-projekt .card-wrapper {
-    background-color: var(--bgFarbe-3);
-    border: 1px solid #555;
-    border-radius: 12px;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1400px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-.ab-projekt ul {
-    margin-top: 1.5rem;
-}
-.ab-projekt ul li {
-    list-style-type: square;
-    line-height: 1.6rem;
-}
-.ab-projekt img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    object-fit: contain;
+
+.ueber .social-icons svg:hover {
+    color: var(--secondColor);
+    transform: scale(1.2);
 }
 
-.ab-projekt .col-left {
-    width: 35%;
+/* -- Textseite  -- */
+.ueber .col-right {
+    width: 55%;
+    color: var(--lightFarbe);
 }
-.ab-projekt .col-right {
-    width: 40%;
+
+.ueber #about {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--lightFarbe);
+    text-decoration: none;
 }
-.microservices {
-    width: 100vw;
-    padding: 2rem;
-    background-color: var(--bgFarbe-2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+.ueber #about span {
+    color: var(--secondColor);
+    text-decoration: underline;
+    transition: 0.3s;
 }
-.microservices .card-wrapper {
-    background-color: var(--bgFarbe-3);
-    border: 1px solid #555;
-    border-radius: 12px;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1400px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+.ueber #about span:hover {
+    color: #fff;
+    text-decoration: none;
 }
-.microservices h2 {
-    text-align: left;
-    width: 100%;
-    padding: 0 0 1rem 0;
-    margin-bottom: 1rem;
-    color: var(--lightFarbe); /* weiß */
+
+.ueber h5 {
+    font-size: 1.3rem;
+    color: var(--secondColor);
+    margin: 1rem 0;
+    letter-spacing: 1px;
 }
-.microservices ul {
-    margin-top: 1rem;
+
+.ueber p, .ueber ul li {
     color: #ccc;
+    line-height: 1.6rem;
+}
+
+.ueber ul {
+    margin-top: 1rem;
     padding-left: 1.5rem;
 }
-.microservices ul li {
+
+.ueber ul li {
     list-style-type: square;
-    line-height: 1.6rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
-.microservices img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    object-fit: contain;
+
+.ueber ul li a {
+    color: var(--secondColor);
+    transition: 0.3s;
 }
-.microservices .col-left {
-    width: 60%;
+
+.ueber ul li a:hover {
+    color: #fff;
 }
-.microservices .col-right {
-    width: 40%;
-}
-.formsys {
+
+/* ---- PROJEKT-SEKTIONEN (gemeinsamer Stil) ---- */
+.formsys,
+.microservices,
+.integrationstest {
     width: 100vw;
     padding: 2rem;
     background-color: var(--bgFarbe-2);
@@ -344,60 +289,125 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-.formsys .card-wrapper {
+.formsys .card-wrapper,
+.microservices .card-wrapper,
+.integrationstest .card-wrapper {
     background-color: var(--bgFarbe-3);
     border: 1px solid #555;
     border-radius: 12px;
     padding: 2rem;
-    width: 100%;
     max-width: 1400px;
+    width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.formsys h2 {
-    text-align: left;
-    width: 100%;
-    padding: 0 0 1rem 0;
+.formsys h2,
+.microservices h2,
+.integrationstest h2 {
     margin-bottom: 1rem;
     color: var(--lightFarbe);
 }
 
-.formsys ul {
+.formsys ul,
+.microservices ul,
+.integrationstest ul {
     margin-top: 1rem;
     color: #ccc;
     padding-left: 1.5rem;
 }
 
-.formsys ul li {
+.formsys ul li,
+.microservices ul li,
+.integrationstest ul li {
     list-style-type: square;
     line-height: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
-.formsys img {
+/* -- Projektbilder -- */
+.formsys img,
+.microservices img,
+.integrationstest img {
     width: 100%;
+    max-width: 800px;
     height: auto;
-    max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     object-fit: contain;
+    margin-bottom: 1rem;
 }
 
-.formsys .col-left {
-    width: 55%;
+/* -- GitHub-Link -- */
+.formsys .github-link,
+.microservices .github-link {
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.formsys .col-right {
-    width: 45%;
+.formsys .github-link a,
+.microservices .github-link a {
+    color: var(--secondColor);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-@media screen and (max-width: 900px) {
-    .formsys .two-column {
-        flex-direction: column;
-    }
-    .formsys .col-left,
-    .formsys .col-right {
+.formsys .github-link a:hover,
+.microservices .github-link a:hover {
+    transform: scale(1.15);
+    color: #fff;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 992px) {
+    .ueber .col-left,
+    .ueber .col-right {
         width: 100%;
+        text-align: center;
+    }
+
+    .ueber .col-right ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .ueber .col-left img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+    .formsys .two-column,
+    .microservices .two-column,
+    .integrationstest .two-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formsys .col-left,
+    .formsys .col-right,
+    .microservices .col-left,
+    .microservices .col-right,
+    .integrationstest .col-left,
+    .integrationstest .col-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .ueber {
+        padding: 3rem 1.5rem;
+    }
+
+    .ueber #about {
+        font-size: 2.3rem;
+    }
+
+    .ueber .col-left img {
+        width: 90%;
+    }
+
+    .ueber .social-icons svg {
+        width: 40px;
+        height: 40px;
     }
 }
 
